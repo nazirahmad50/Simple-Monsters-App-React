@@ -1,31 +1,38 @@
-import React, { Component } from 'react';
-import './App.css';
-import axios from 'axios';
+import React, { Component } from "react";
+import "./App.css";
+import axios from "axios";
+
+import { CardList } from "./Components/card-list/card-list.component";
+import { SearchBox } from "./Components/search-box/search-box.component";
 
 class App extends Component {
-
   state = {
-    monsters: []
-  }
+    monsters: [],
+    searchField: "",
+  };
 
-  componentDidMount(){
-    axios("https://jsonplaceholder.typicode.com/users").then(res =>{
+  componentDidMount() {
+    axios("https://jsonplaceholder.typicode.com/users").then((res) => {
       this.setState({
-        monsters: res.data
-      })
-    })
+        monsters: res.data,
+      });
+    });
   }
+  render() {
+    const { monsters, searchField } = this.state;
+    const filteredMonsters = monsters.filter((monster) =>
+      monster.name.toLowerCase().includes(searchField.toLocaleLowerCase())
+    );
 
-  render(){
-  return (
-    <div className="App">
-     {
-       this.state.monsters.map(m =>(
-          <h1 key={m.id}>{m.name}</h1>
-       ))
-     }
-    </div>
-  );
+    return (
+      <div className="App">
+        <SearchBox
+          placeholder="Search Monsters"
+          handleChange={(e) => this.setState({ searchField: e.target.value })}
+        />
+        <CardList monsters={filteredMonsters} />
+      </div>
+    );
   }
 }
 
