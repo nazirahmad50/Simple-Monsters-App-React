@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Simple-Monsters-App-React/static/css/main.e6c2abe8.chunk.css",
+    "main.js": "/Simple-Monsters-App-React/static/js/main.f2dbb144.chunk.js",
+    "main.js.map": "/Simple-Monsters-App-React/static/js/main.f2dbb144.chunk.js.map",
+    "runtime-main.js": "/Simple-Monsters-App-React/static/js/runtime-main.bc523da1.js",
+    "runtime-main.js.map": "/Simple-Monsters-App-React/static/js/runtime-main.bc523da1.js.map",
+    "static/js/2.bde54a13.chunk.js": "/Simple-Monsters-App-React/static/js/2.bde54a13.chunk.js",
+    "static/js/2.bde54a13.chunk.js.map": "/Simple-Monsters-App-React/static/js/2.bde54a13.chunk.js.map",
+    "index.html": "/Simple-Monsters-App-React/index.html",
+    "precache-manifest.dc440c81faa3cf45f7078bfd7f714a51.js": "/Simple-Monsters-App-React/precache-manifest.dc440c81faa3cf45f7078bfd7f714a51.js",
+    "service-worker.js": "/Simple-Monsters-App-React/service-worker.js",
+    "static/css/main.e6c2abe8.chunk.css.map": "/Simple-Monsters-App-React/static/css/main.e6c2abe8.chunk.css.map",
+    "static/js/2.bde54a13.chunk.js.LICENSE.txt": "/Simple-Monsters-App-React/static/js/2.bde54a13.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc523da1.js",
+    "static/js/2.bde54a13.chunk.js",
+    "static/css/main.e6c2abe8.chunk.css",
+    "static/js/main.f2dbb144.chunk.js"
+  ]
+}
